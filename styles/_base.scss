@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/paytone_one/PaytoneOne.ttf);
+    //src: url(../fonts/typographica/TypoGraphica.otf);
+}
+
+html,
+body {
+    color: $steel;
+    background-color: $white;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.66;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong {
+    font-family: myFirstFont;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about {
+    margin-left: 0;
+}
+
+.backing {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center right fixed url(../images/bassBW1.jpg);
+    background-size: cover;
+}
+
+.overlay {
+    background-color: rgba( $steel, .7 );
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+#nav-toggle-btn {
+    z-index: 3;
+}
+
+#navMenu {
+    background: linear-gradient($steel 75%, transparent);
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // z-index: 900;
+    // width: 100%;
+    // text-align: center;
+
+    label {
+        color: $white;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 3em;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 0 1em;
+
+        &:hover {
+            color: $marigold;
+        }
+    }
+}
+
+
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-aligh: center;
+}
+
+.title {
+    // font-family:
+    font-size: 5em;
+    // text-shadow:
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-image: url(../images/background.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: left 0s .75;
+}
+
+.slide-t {background-image: url('../images/background.png');}
+.slide-a {background-image: url('../images/background.png');}
+.slide-e {background-image: url('../images/background.png');}
+.slide-s {background-image: url('../images/background.png');}
+.slide-p {background-image: url('../images/background.png');}
+.slide-c {background-image: url('../images/background.png');}
+
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+
+.slide h1 {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform .5s .5s, opacity .5s;
+}
+
+[id^="slide"]:checked + .slide h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+}
+
+.my-title {
+    width: 100%;
+    position: fixed;
+    top: 35%;
+    // z-index: 4;
+    font-size: 4em;
+
+    p {
+        color: $white;
+    }
+
+    a {
+        color: $marigold;
+    }
+}
+
+.my-title2 {
+    width: 100%;
+    position: fixed;
+    top:30%;
+    font-size: 4em;
+
+    p {
+        color: $white;
+    }
+
+    a {
+        color: $marigold;
+    }
+}
+
+.my-title3 {
+    width: 100%;
+    position: fixed;
+    top:25%;
+    font-size: 4em;
+
+    p {
+        color: $white;
+    }
+
+    a {
+        color: $marigold;
+    }
+}
+
+.title-space {
+    height: 80px;
+}
+
+.img-circle {
+    width: 70%;
+    border-radius: 50%;
+    border: 5px solid $marigold;
+}
+
+
+/*------------------------
+    Experience
+------------------------*/
+.quote {
+    width: 100%;
+    color: $white;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: right;
+    // margin-top: -8px;
+}
+
+/*------------------------
+    Projects
+------------------------*/
+#projects .row > div { margin-bottom: 30px; }
+#projects figure { position: relative; overflow: hidden; }
+// #projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
+#projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
+#projects figure img { width: 110%; }
+#projects figure figcaption {
+    padding: 20px 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+#projects figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+#projects figure .icon {
+	// background: $marigold;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+    font-size: 30px;
+}
+
+figure.projFig {
+    background: $steel;
+    color: $marigold;
+}
+
+figure.projFig img {
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.projFig:hover img {
+    opacity: 0.2;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.projFig figcaption {
+    text-align: left;
+}
+
+figure.projFig h3 {
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35;
+}
+
+figure.projFig:hover h3 {
+    opacity: 1;
+}
+
+figure.projFig h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: $marigold;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+
+figure.projFig:hover h3::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.projFig p {
+    font-size: 15px;
+    padding-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+
+figure.projFig:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+
+/*-----------------------------
+    Skills
+-----------------------------*/
+#skills {
+    .fader {
+        width: 150%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .vertical-text {
+    	transform: rotate(45deg);
+    	transform-origin: -4px 35px;
+        color: $marigold;
+        font-size: 1.40rem;
+    }
+
+    .mixer {
+        margin: none;
+        margin-top: -5px;
+        // background-color: $screen;
+        // opacity: .3;
+    }
+}
+
+
+/*---------------------------
+    Contact
+---------------------------*/
+#contact {
+    .icons {
+        color: $white;
+
+        a {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            display: inline;
+            vertical-align: 12%;
+            margin: 0;
+        }
+        ul.no-bullets {
+            list-style-type: none;
+        }
+    }
+    .icon {
+        color: $marigold;
+        font-size: 200%;
+    }
+}
