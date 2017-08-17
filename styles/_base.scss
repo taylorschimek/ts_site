@@ -29,16 +29,22 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3rem;
+
+    @media screen and (min-width: 768px) {
+        font-size: 5rem;
+    }
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.about {
-    margin-left: 0;
-}
+
+
+/*------------------------*/
+/*******Background*********/
+/*------------------------*/
 
 .backing {
     width: 100%;
@@ -57,6 +63,11 @@ p {
     right: 0px;
     z-index: 2;
 }
+
+
+/*------------------------*/
+/*******Navigation*********/
+/*------------------------*/
 
 #myNav {
     z-index: 10000;
@@ -115,6 +126,11 @@ p {
     // text-shadow:
 }
 
+
+/*------------------------*/
+/*******Slides*************/
+/*------------------------*/
+
 .slide {
     width: 100%;
     height: 100%;
@@ -154,66 +170,69 @@ p {
     transition: all .5s .5s;
 }
 
-.my-title {
+
+
+/*------------------------*/
+/*******All Pages**********/
+/*------------------------*/
+.my-title, .my-title1, .my-title2, .my-title3 {
     width: 100%;
     position: fixed;
-    top: 35%;
-    // z-index: 4;
-    font-size: 4em;
-
+    font-size: 1rem;
     p {
         color: $white;
+        padding-left: .25rem;
     }
-
     a {
         color: $marigold;
     }
 
-    @media screen and (max-width: 768px) {
-        top: 8%;
+    @media screen and (min-width: 768px) {
+        font-size: 1.1rem;
+        p {
+            padding-left: 1rem;
+        }
     }
 }
 
+.my-title {
+    top: 8%;
+    @media screen and (min-width: 768px) {
+        top: 35%;
+    }
+}
+
+.my-title1 {
+    top: 35%;
+}
+
 .my-title2 {
-    width: 100%;
-    position: fixed;
-    top:30%;
-    font-size: 4em;
-
-    p {
-        color: $white;
-    }
-
-    a {
-        color: $marigold;
-    }
-
-    @media screen and (max-width: 768px) {
-        top: 8%;
+    top: 8%;
+    @media screen and (min-width: 768px) {
+        top: 30%;
     }
 }
 
 .my-title3 {
-    width: 100%;
-    position: fixed;
-    top:25%;
-    font-size: 4em;
-
-    p {
-        color: $white;
-    }
-
-    a {
-        color: $marigold;
-    }
-
-    @media screen and (max-width: 768px) {
-        top: 8%;
+    top:8%;
+    @media screen and (min-width: 768px) {
+        top: 25%;
     }
 }
 
+
 .title-space {
     height: 80px;
+}
+
+.quote {
+    width: 100%;
+    color: $white;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    text-align: right;
+    // margin-top: -8px;
 }
 
 .img-circle {
@@ -224,17 +243,18 @@ p {
 
 
 /*------------------------
+    About Me
+------------------------*/
+
+.about {
+    margin-left: 0;
+}
+
+
+/*------------------------
     Experience
 ------------------------*/
-.quote {
-    width: 100%;
-    color: $white;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    text-align: right;
-    // margin-top: -8px;
-}
+
 
 /*------------------------
     Projects
