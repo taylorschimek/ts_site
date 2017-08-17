@@ -17,3 +17,13 @@ $(document).on('click', '.navBarCollapse', function(e) {
 	//
 	// }
 });
+
+$( document ).ready(function() {
+	if ($(window).width() < 768) $('.change-row').addClass("row");
+	else $('.change-row').removeClass("row");
+});
+
+$( window ).resize(function() {
+	if ($(window).width() < 768) $('.change-row').addClass("row");
+	else $('.change-row').removeClass("row");
+});

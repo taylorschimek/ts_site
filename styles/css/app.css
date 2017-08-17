@@ -6301,9 +6301,7 @@ p {
     color: #f7ce3e; }
   @media screen and (min-width: 768px) {
     .my-title, .my-title1, .my-title2, .my-title3 {
-      font-size: 1.1rem; }
-      .my-title p, .my-title1 p, .my-title2 p, .my-title3 p {
-        padding-left: 1rem; } }
+      font-size: 1.1rem; } }
 
 .my-title {
   top: 8%; }
@@ -6315,10 +6313,20 @@ p {
   top: 35%; }
 
 .my-title2 {
-  top: 8%; }
+  top: 8%;
+  font-size: .7rem; }
+  .my-title2 h2 {
+    font-size: 1.1rem; }
+  .my-title2 h5 {
+    font-size: .9rem; }
   @media screen and (min-width: 768px) {
     .my-title2 {
-      top: 30%; } }
+      top: 30%;
+      font-size: 1.25rem; }
+      .my-title2 h2 {
+        font-size: 2rem; }
+      .my-title2 h5 {
+        font-size: 1.25rem; } }
 
 .my-title3 {
   top: 8%; }
@@ -6351,6 +6359,18 @@ p {
 /*------------------------
     Experience
 ------------------------*/
+#experience .no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  margin-left: -18px;
+  font-size: .6rem;
+  padding: 5px; }
+  @media screen and (min-width: 768px) {
+    #experience .no-bullets {
+      margin: 0px;
+      padding-left: 15px;
+      font-size: 1.25rem; } }
+
 /*------------------------
     Projects
 ------------------------*/
