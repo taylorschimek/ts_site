@@ -13,36 +13,125 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <nav id="myNav" class="navbar navbar-toggleable-sm navbar-light">
+        <nav id="myNav" class="navbar navbar-toggleable-md navbar-light fixed-top">
             <button id="nav-toggle-btn" class="navbar-toggler navbar-toggler-right btn btn-secondary" type="button" data-toggle="collapse" data-target="#togglemenu" aria-controls="togglemenu" aria-expanded="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
+            <a href="#" class="navbar-brand">
+                <img src="styles/images/ts_logo2_30x24.png" alt="" class="nav-logo">
+            </a>
 
-            <div class="collapse navbar-collapse" id="togglemenu">
-                <ul id="navMenu" class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <label for="slide-1-trigger">Title</label>
-                    </li>
-                    <li class="nav-item">
-                        <label for="slide-2-trigger">About Me</label>
-                    </li>
-                    <li class="nav-item">
-                        <label for="slide-3-trigger">Experiences</label>
-                    </li>
-                    <li class="nav-item">
-                        <label for="slide-4-trigger">Skills</label>
-                    </li>
-                    <li class="nav-item">
-                        <label for="slide-5-trigger">Projects</label>
-                    </li>
-                    <li class="nav-item">
-                        <label for="slide-6-trigger">Contact</label>
-                    </li>
-                </ul>
+            <div class="row container col-md-8 offset-md-2 text-center">
+                <!-- <div class="col-1 col-md-2"></div> -->
+
+                    <div class="collapse navbar-collapse" id="togglemenu">
+                        <div class="container">
+                            <ul id="navMenu" class="navbar-nav">
+                                <li class="nav-item">
+                                    <label class="navBarCollapse" for="slide-1-trigger">Title</label>
+                                </li>
+                                <li class="nav-item">
+                                    <label class="navBarCollapse" for="slide-2-trigger">About Me</label>
+                                </li>
+                                <li class="nav-item">
+                                    <label class="navBarCollapse" for="slide-3-trigger">Experiences</label>
+                                </li>
+                                <li class="nav-item">
+                                    <label class="navBarCollapse" for="slide-4-trigger">Skills</label>
+                                </li>
+                                <li class="nav-item">
+                                    <label class="navBarCollapse" for="slide-5-trigger">Projects</label>
+                                </li>
+                                <li class="nav-item">
+                                    <label class="navBarCollapse" for="slide-6-trigger">Contact</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
 
-        <div class="backing"></div>
+        <div class="backing">
+
+        <div class="wrap">
+            <!-- /title -->
+            <input type="radio" id="slide-1-trigger" name="slides" checked />
+            <section id="title" class='slide slide-t'>
+                <div class="container my-title">
+                    <div class="row my-sm-0 my-md-5">
+                        <div class="col-1 col-md-2"></div>
+                        <div class="col-10 col-md-8">
+                            <h1 class="text-info">Taylor Schimek</h1>
+                            <hr style="border-color: #f7ce3e; width: 140%;"/>
+                            <p class="lead text-info">A Work in Progress</p>
+                        </div>
+                        <div class="col-1 col-md-2"></div>
+                    </div>
+
+
+
+                    <div class="title-space row"></div>
+                    <div class="row mx-sm-2 mx-md-5 my-sm-0 my-md-5">
+                        <div class="col-1 col-md-2"></div>
+                        <div class="col-10 col-md-8 quote">
+                            <p class="quote text-success">
+                                <i>Live as if you were to die tomorrow.  <br />Learn as if you were to live forever.</i>
+                            </p>
+                            <p class="quote">- Mohatma Gandhi</p>
+                        </div>
+                        <div class="col-1 col-md-2"></div>
+                    </div>
+                </div>
+
+
+
+
+            </section>  <!-- /title -->
+
+            <!-- about -->
+            <input type="radio" id="slide-2-trigger" name="slides" />
+            <section id="about" class='slide slide-a'>
+                <div class="container row my-title">
+                    <div class="col-1 col-md-1"></div>
+                    <div class="col-10 col-md-7">
+                        <div class="row">
+                            <div class="col-11 col-md-7">
+                                <h1 class="about text-info text-left">About Me</h1>
+                            </div>
+                            <div class="col-11 col-md-5">
+                                <p class="quote pt-xs-1 pt-md-4"><i>Never index your own book.</i></p>
+                                <p class="quote">- Kurt Vonnegut</p>
+                            </div>
+                        </div>
+                        <hr style="border-color: #f7ce3e; width: 110%;"/>
+                        <!-- <p class="lead pl-3">
+                            I have a background in music and medieval history, and a passion for fantasy literature.
+                            A few years ago, during some personel changes at my old job, I got the opportunity to do a little coding
+                            and something just clicked.  I really enjoyed it, and picked it up quickly.
+                            <br />
+                            I started playing around with different languages in my spare time.  It became my favorite hobby.
+                            In 2015 I had a new baby, moved, and started a new lavender farm.  My time was spread thin, but I tried to keep
+                            learning.
+                            Toward the end of 2016 I started teaching myself python, django and supporting tools (ie, Git, Bootstrap, et al).
+                        </p> -->
+                        <!-- <p class="lead pl-3">I am <span style="color: #f7ce3e">40</span>.</p> -->
+                        <p class="lead pl-3"><span style="color: #f7ce3e">Background</span> in music and medieval history.</p>
+                        <p class="lead pl-3">Passion for <span style="color: #f7ce3e">fantasy</span> literature and <span style="color: #f7ce3e">real</span> baseball.</p>
+                        <p class="lead pl-3">Worked in the music <span style="color: #f7ce3e">industry</span> for <span style="color: #f7ce3e">15</span> years.</p>
+                        <p class="lead pl-3">Tasted coding at my last job; you could say I caught the <span style="color: #f7ce3e">bug</span>.</p>
+                        <p class="lead pl-3">Started teaching myself <span style="color: #f7ce3e">python, django</span> and supporting tools.</p>
+                        <p class="lead pl-3">Haven't stopped despite a new <span style="color: #f7ce3e;">baby</span>, a move and building a new <span style="color: #B57EDC">lavender</span> farm.</p>
+                        <p class="lead pl-3">Love the seemingly endless <span style="color: #f7ce3e;">learning</span>.</p>
+                    </div>
+                    <div class="col-md-4 hidden-sm-down">
+                        <img class="img-circle" src="styles/images/titoBW.JPG" alt="Taylor Schimek">
+                    </div>
+                </div>
+            </section>  <!-- /about -->
+        </div>
+        </div>
         <div class="overlay"></div>
 
 
