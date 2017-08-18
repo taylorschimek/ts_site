@@ -71,7 +71,7 @@ p {
 
 #myNav {
     z-index: 10000;
-    background: linear-gradient($steel 75%, transparent);
+    background: $steel;
 
     @media screen and (min-width: 768px) {
         background: linear-gradient($steel 75%, transparent);
@@ -195,7 +195,7 @@ p {
 }
 
 .my-title {
-    top: 8%;
+    top: 10%;
     @media screen and (min-width: 768px) {
         top: 35%;
     }
@@ -206,7 +206,7 @@ p {
 }
 
 .my-title2 {
-    top: 8%;
+    top: 10%;
     font-size: .7rem;
     h2 {
         font-size: 1.1rem;
@@ -227,7 +227,7 @@ p {
 }
 
 .my-title3 {
-    top:8%;
+    top:10%;
     @media screen and (min-width: 768px) {
         top: 25%;
     }
@@ -255,19 +255,18 @@ p {
 }
 
 
-/*------------------------
-    About Me
-------------------------*/
 
+/*------------------------*/
+/*******About**************/
+/*------------------------*/
 .about {
     margin-left: 0;
 }
 
 
-/*------------------------
-    Experience
-------------------------*/
-
+/*------------------------*/
+/*******Experience*********/
+/*------------------------*/
 #experience {
     .no-bullets {
         list-style-type: none;
@@ -285,9 +284,9 @@ p {
 }
 
 
-/*------------------------
-    Projects
-------------------------*/
+/*------------------------*/
+/*******Projects***********/
+/*------------------------*/
 #projects .row > div { margin-bottom: 30px; }
 #projects figure { position: relative; overflow: hidden; }
 // #projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
@@ -397,37 +396,58 @@ figure.projFig:hover p {
 }
 
 
-/*-----------------------------
-    Skills
------------------------------*/
+/*------------------------*/
+/*******Skills*************/
+/*------------------------*/
 #skills {
-    .fader {
+    .fader-big {
         width: 150%;
-        display: block;
+        // display: block;
         margin: 0 auto;
+        // @media screen and (max-width: 767px) {
+        //     transform: rotate(90deg);
+        //     // transform-origin: 50% center;
+        //     width: 15%;
+        // }
+    }
+
+    .fader-sm {
+        width: 100%;
+        margin-bottom: 4%;
     }
 
     .vertical-text {
-    	transform: rotate(45deg);
-    	transform-origin: -4px 35px;
+        transform: rotate(0deg);
+        transform-origin: 0px 0px;
         color: $marigold;
-        font-size: 1.40rem;
+        font-size: .8rem;
+        text-align: right;
+
+        @media screen and (min-width: 768px) {
+        	transform: rotate(45deg);
+        	transform-origin: -4px 35px;
+            color: $marigold;
+            font-size: 1.40rem;
+        }
     }
 
     .mixer {
         margin: none;
-        margin-top: -5px;
-        // background-color: $screen;
-        // opacity: .3;
+        margin-top: 10px;
+        @media screen and (min-width: 768px) {
+            margin: none;
+            margin-top: -5px;
+        }
     }
 }
 
 
-/*---------------------------
-    Contact
----------------------------*/
+/*------------------------*/
+/*******Contact************/
+/*------------------------*/
 #contact {
     .icons {
+        font-size: 1rem;
         color: $white;
 
         a {
@@ -443,9 +463,26 @@ figure.projFig:hover p {
         ul.no-bullets {
             list-style-type: none;
         }
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.5rem;
+        }
     }
     .icon {
         color: $marigold;
-        font-size: 200%;
+        font-size: 2rem;
+
+        @media screen and (min-width: 768px) {
+            font-size: 200%;
+        }
+    }
+    .logo img {
+        z-index: 200;
+        width: 80%;
+        opacity: 0.2;
+
+        @media screen and (min-width: 768px) {
+            width: 80%;
+        }
     }
 }
