@@ -6204,17 +6204,43 @@ p {
 /*------------------------*/
 #myNav {
   z-index: 10000;
-  background: #0a1612; }
+  background: #0a1612;
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+  padding-bottom: 5px; }
   @media screen and (min-width: 768px) {
     #myNav {
       background: linear-gradient(#0a1612 75%, transparent);
-      text-align: center; } }
+      text-align: center;
+      margin: auto;
+      padding: auto; } }
+  #myNav .collapse {
+    margin-left: 0; }
+    @media screen and (min-width: 768px) {
+      #myNav .collapse {
+        margin-left: -60px; } }
+  #myNav .sub-collapse {
+    width: 100%;
+    margin-left: auto; }
+    @media screen and (min-width: 768px) {
+      #myNav .sub-collapse {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto; } }
+  #myNav .brand-name {
+    font-family: myFirstFont;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px; }
   #myNav #navMenu {
     line-height: 2em; }
     #myNav #navMenu .nav-item label {
       cursor: pointer;
       color: #fff;
-      margin: auto;
+      margin-left: 10px;
       padding: auto;
       text-align: center; }
       #myNav #navMenu .nav-item label:hover {
@@ -6227,7 +6253,7 @@ p {
         line-height: 1rem; } }
   #myNav #nav-toggle-btn {
     z-index: 100;
-    margin-top: 5px; }
+    margin-top: 6px; }
 
 .wrap {
   height: 100%;
@@ -6484,7 +6510,7 @@ figure.projFig:hover p {
 /*******Skills*************/
 /*------------------------*/
 #skills .fader-big {
-  width: 150%;
+  width: 120%;
   margin: 0 auto; }
 #skills .fader-sm {
   width: 100%;
