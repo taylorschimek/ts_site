@@ -232,6 +232,17 @@ p {
     @media screen and (min-width: 768px) {
         top: 35%;
     }
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+        top: 15%;
+        font-size: .7rem;
+        h2 {
+            font-size: 1.1rem;
+        }
+        h5 {
+            font-size: .8rem;
+            margin-bottom: .3rem;
+        }
+    }
 }
 
 .my-title1 {
@@ -257,6 +268,25 @@ p {
             font-size: 1.25rem;
         }
     }
+
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+        top: 15%;
+        font-size: .7rem;
+        h2 {
+            font-size: 1.1rem;
+        }
+        h5 {
+            font-size: .8rem;
+            margin-bottom: .3rem;
+        }
+        p {
+            margin-bottom: .5rem;
+        }
+        hr {
+            margin: .5rem;
+            margin-top: 0;
+        }
+    }
 }
 
 .my-title3 {
@@ -264,11 +294,26 @@ p {
     @media screen and (min-width: 768px) {
         top: 25%;
     }
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+        top: 15%;
+        font-size: .7rem;
+        h2 {
+            font-size: 1.1rem;
+        }
+        h5 {
+            font-size: .8rem;
+            margin-bottom: .3rem;
+        }
+    }
 }
 
 
 .title-space {
     height: 80px;
+
+    @media screen and (orientation: landscape) {
+        height: 30px;
+    }
 }
 
 .quote {
@@ -322,7 +367,6 @@ p {
 /*------------------------*/
 #projects .row > div { margin-bottom: 30px; }
 #projects figure { position: relative; overflow: hidden; }
-// #projects figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
 #projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
 #projects figure img { width: 110%; }
 #projects figure figcaption {
@@ -442,6 +486,17 @@ figure.projFig:hover p {
         //     // transform-origin: 50% center;
         //     width: 15%;
         // }
+
+        // @media screen and (max-width: 767px) and (orientation: landscape) {
+        //     width: 15%;
+        // }
+    }
+
+    .col-4 {
+        @media screen and (max-width: 767px) and (orientation: landscape) {
+            padding-right: 0;
+            margin-right: 0;
+        }
     }
 
     .fader-sm {
@@ -462,6 +517,12 @@ figure.projFig:hover p {
             color: $marigold;
             font-size: 1.40rem;
         }
+        @media screen and (max-width: 767px) and (orientation: landscape) {
+            transform: rotate(45deg);
+        	transform-origin: -1px 20px;
+            color: $marigold;
+            font-size: .8rem;
+        }
     }
 
     .mixer {
@@ -470,6 +531,9 @@ figure.projFig:hover p {
         @media screen and (min-width: 768px) {
             margin: none;
             margin-top: -5px;
+        }
+        @media screen and (max-width: 767px) and (orientation: landscape) {
+            margin: 0 auto;
         }
     }
 }
@@ -516,6 +580,10 @@ figure.projFig:hover p {
 
         @media screen and (min-width: 768px) {
             width: 80%;
+        }
+        @media screen and (orientation: landscape) {
+            width: 10%;
+            opacity: .5;
         }
     }
 }

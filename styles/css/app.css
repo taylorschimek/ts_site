@@ -6334,6 +6334,15 @@ p {
   @media screen and (min-width: 768px) {
     .my-title {
       top: 35%; } }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    .my-title {
+      top: 15%;
+      font-size: .7rem; }
+      .my-title h2 {
+        font-size: 1.1rem; }
+      .my-title h5 {
+        font-size: .8rem;
+        margin-bottom: .3rem; } }
 
 .my-title1 {
   top: 35%; }
@@ -6353,15 +6362,41 @@ p {
         font-size: 2rem; }
       .my-title2 h5 {
         font-size: 1.25rem; } }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    .my-title2 {
+      top: 15%;
+      font-size: .7rem; }
+      .my-title2 h2 {
+        font-size: 1.1rem; }
+      .my-title2 h5 {
+        font-size: .8rem;
+        margin-bottom: .3rem; }
+      .my-title2 p {
+        margin-bottom: .5rem; }
+      .my-title2 hr {
+        margin: .5rem;
+        margin-top: 0; } }
 
 .my-title3 {
   top: 10%; }
   @media screen and (min-width: 768px) {
     .my-title3 {
       top: 25%; } }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    .my-title3 {
+      top: 15%;
+      font-size: .7rem; }
+      .my-title3 h2 {
+        font-size: 1.1rem; }
+      .my-title3 h5 {
+        font-size: .8rem;
+        margin-bottom: .3rem; } }
 
 .title-space {
   height: 80px; }
+  @media screen and (orientation: landscape) {
+    .title-space {
+      height: 30px; } }
 
 .quote {
   width: 100%;
@@ -6512,6 +6547,10 @@ figure.projFig:hover p {
 #skills .fader-big {
   width: 120%;
   margin: 0 auto; }
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  #skills .col-4 {
+    padding-right: 0;
+    margin-right: 0; } }
 #skills .fader-sm {
   width: 100%;
   margin-bottom: 4%; }
@@ -6527,6 +6566,12 @@ figure.projFig:hover p {
       transform-origin: -4px 35px;
       color: #f7ce3e;
       font-size: 1.40rem; } }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    #skills .vertical-text {
+      transform: rotate(45deg);
+      transform-origin: -1px 20px;
+      color: #f7ce3e;
+      font-size: .8rem; } }
 #skills .mixer {
   margin: none;
   margin-top: 10px; }
@@ -6534,6 +6579,9 @@ figure.projFig:hover p {
     #skills .mixer {
       margin: none;
       margin-top: -5px; } }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    #skills .mixer {
+      margin: 0 auto; } }
 
 /*------------------------*/
 /*******Contact************/
@@ -6567,5 +6615,9 @@ figure.projFig:hover p {
   @media screen and (min-width: 768px) {
     #contact .logo img {
       width: 80%; } }
+  @media screen and (orientation: landscape) {
+    #contact .logo img {
+      width: 10%;
+      opacity: .5; } }
 
 /*# sourceMappingURL=app.css.map */
