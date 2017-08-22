@@ -20,8 +20,8 @@ body {
 }
 
 body {
-    font-size: 15px;
-    line-height: 1.66;
+    font-size: 12px;
+    line-height: 1.2;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong {
@@ -145,6 +145,10 @@ p {
     }
 }
 
+.section {
+    height: 90vh;
+}
+
 .wrap {
     height: 100%;
     width: 100%;
@@ -220,7 +224,7 @@ p {
         color: $marigold;
     }
     @media screen and (min-width: 768px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
         // p {
         //     padding-left: .5rem;
         // }
@@ -260,7 +264,7 @@ p {
     }
     @media screen and (min-width: 768px) {
         top: 30%;
-        font-size: 1.25rem;
+        font-size: 1rem;
         h2 {
             font-size: 2rem;
         }
@@ -291,6 +295,7 @@ p {
 
 .my-title3 {
     top:10%;
+    font-size: 1rem;
     @media screen and (min-width: 768px) {
         top: 25%;
     }
@@ -356,7 +361,7 @@ p {
         @media screen and (min-width: 768px) {
             margin: 0px;
             padding-left: 15px;
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
     }
 }
@@ -394,7 +399,7 @@ p {
 	position: absolute;
 	top: 5px;
 	right: 5px;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 figure.projFig {
@@ -427,7 +432,7 @@ figure.projFig h3 {
     font-size: 20px;
     position: relative;
     overflow: hidden;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35;
@@ -478,7 +483,7 @@ figure.projFig:hover p {
 /*------------------------*/
 #skills {
     .fader-big {
-        width: 120%;
+        width: 100%;
         // display: block;
         margin: 0 auto;
         // @media screen and (max-width: 767px) {
@@ -515,7 +520,7 @@ figure.projFig:hover p {
         	transform: rotate(45deg);
         	transform-origin: -4px 35px;
             color: $marigold;
-            font-size: 1.40rem;
+            font-size: 1.1rem;
         }
         @media screen and (max-width: 767px) and (orientation: landscape) {
             transform: rotate(45deg);
@@ -562,7 +567,7 @@ figure.projFig:hover p {
         }
 
         @media screen and (min-width: 768px) {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
     .icon {
@@ -570,7 +575,7 @@ figure.projFig:hover p {
         font-size: 2rem;
 
         @media screen and (min-width: 768px) {
-            font-size: 200%;
+            font-size: 180%;
         }
     }
     .logo img {

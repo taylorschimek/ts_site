@@ -6165,8 +6165,8 @@ body {
   padding: 0; }
 
 body {
-  font-size: 15px;
-  line-height: 1.66; }
+  font-size: 12px;
+  line-height: 1.2; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong {
   font-family: myFirstFont; }
@@ -6255,6 +6255,9 @@ p {
     z-index: 100;
     margin-top: 6px; }
 
+.section {
+  height: 90vh; }
+
 .wrap {
   height: 100%;
   width: 100%;
@@ -6327,7 +6330,7 @@ p {
     color: #f7ce3e; }
   @media screen and (min-width: 768px) {
     .my-title, .my-title1, .my-title2, .my-title3 {
-      font-size: 1.1rem; } }
+      font-size: 1rem; } }
 
 .my-title {
   top: 10%; }
@@ -6357,7 +6360,7 @@ p {
   @media screen and (min-width: 768px) {
     .my-title2 {
       top: 30%;
-      font-size: 1.25rem; }
+      font-size: 1rem; }
       .my-title2 h2 {
         font-size: 2rem; }
       .my-title2 h5 {
@@ -6378,7 +6381,8 @@ p {
         margin-top: 0; } }
 
 .my-title3 {
-  top: 10%; }
+  top: 10%;
+  font-size: 1rem; }
   @media screen and (min-width: 768px) {
     .my-title3 {
       top: 25%; } }
@@ -6430,7 +6434,7 @@ p {
     #experience .no-bullets {
       margin: 0px;
       padding-left: 15px;
-      font-size: 1.25rem; } }
+      font-size: 1rem; } }
 
 /*------------------------*/
 /*******Projects***********/
@@ -6474,7 +6478,7 @@ p {
   position: absolute;
   top: 5px;
   right: 5px;
-  font-size: 30px; }
+  font-size: 15px; }
 
 figure.projFig {
   background: #0a1612;
@@ -6502,7 +6506,7 @@ figure.projFig h3 {
   font-size: 20px;
   position: relative;
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35; }
@@ -6545,7 +6549,7 @@ figure.projFig:hover p {
 /*******Skills*************/
 /*------------------------*/
 #skills .fader-big {
-  width: 120%;
+  width: 100%;
   margin: 0 auto; }
 @media screen and (max-width: 767px) and (orientation: landscape) {
   #skills .col-4 {
@@ -6565,7 +6569,7 @@ figure.projFig:hover p {
       transform: rotate(45deg);
       transform-origin: -4px 35px;
       color: #f7ce3e;
-      font-size: 1.40rem; } }
+      font-size: 1.1rem; } }
   @media screen and (max-width: 767px) and (orientation: landscape) {
     #skills .vertical-text {
       transform: rotate(45deg);
@@ -6601,13 +6605,13 @@ figure.projFig:hover p {
     list-style-type: none; }
   @media screen and (min-width: 768px) {
     #contact .icons {
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
 #contact .icon {
   color: #f7ce3e;
   font-size: 2rem; }
   @media screen and (min-width: 768px) {
     #contact .icon {
-      font-size: 200%; } }
+      font-size: 180%; } }
 #contact .logo img {
   z-index: 200;
   width: 80%;
