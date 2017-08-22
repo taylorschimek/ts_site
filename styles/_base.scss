@@ -13,8 +13,8 @@ body {
     color: $steel;
     background-color: $white;
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -294,13 +294,14 @@ p {
 }
 
 .my-title3 {
-    top:10%;
+    top:5%;
+    bottom: 5%;
     font-size: 1rem;
     @media screen and (min-width: 768px) {
         top: 25%;
     }
     @media screen and (max-width: 767px) and (orientation: landscape) {
-        top: 15%;
+        top: 8%;
         font-size: .7rem;
         h2 {
             font-size: 1.1rem;
@@ -531,6 +532,7 @@ figure.projFig:hover p {
     }
 
     .mixer {
+
         margin: none;
         margin-top: 10px;
         @media screen and (min-width: 768px) {

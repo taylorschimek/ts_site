@@ -6159,8 +6159,6 @@ body {
   color: #0a1612;
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0; }
 
@@ -6381,14 +6379,15 @@ p {
         margin-top: 0; } }
 
 .my-title3 {
-  top: 10%;
+  top: 5%;
+  bottom: 5%;
   font-size: 1rem; }
   @media screen and (min-width: 768px) {
     .my-title3 {
       top: 25%; } }
   @media screen and (max-width: 767px) and (orientation: landscape) {
     .my-title3 {
-      top: 15%;
+      top: 8%;
       font-size: .7rem; }
       .my-title3 h2 {
         font-size: 1.1rem; }

@@ -31,6 +31,7 @@ function small_port() {
 	$('.mixer-bg').addClass('hidden-sm-down');
 	//skills - show small
 	$('.mixer-sm').removeClass('hidden-md-up');
+	$('.quote2').addClass('hidden-sm-down');
 }
 
 function not_small_port() {
@@ -45,6 +46,7 @@ function not_small_port() {
 	$('.mixer-bg').removeClass('hidden-sm-down');
 	//skills - hide small
 	$('.mixer-sm').addClass('hidden-md-up');
+	$('.quote2').removeClass('hidden-sm-down');
 }
 
 function small_land() {
