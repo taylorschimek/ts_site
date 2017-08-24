@@ -5,7 +5,6 @@
 @font-face {
     font-family: myFirstFont;
     src: url(../fonts/paytone_one/PaytoneOne.ttf);
-    //src: url(../fonts/typographica/TypoGraphica.otf);
 }
 
 html,
@@ -13,8 +12,6 @@ body {
     color: $steel;
     background-color: $white;
     font-family: 'Open Sans', sans-serif;
-    // height: 100%;
-    // width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -117,7 +114,6 @@ p {
             label {
                 cursor: pointer;
                 color: $white;
-                // margin: auto;
                 margin-left: 10px;
                 padding: auto;
                 text-align: center;
@@ -154,13 +150,10 @@ p {
     width: 100%;
     position: relative;
     overflow: hidden;
-    // text-align: center;
 }
 
 .title {
-    // font-family:
     font-size: 5em;
-    // text-shadow:
 }
 
 
@@ -225,9 +218,6 @@ p {
     }
     @media screen and (min-width: 768px) {
         font-size: 1rem;
-        // p {
-        //     padding-left: .5rem;
-        // }
     }
 }
 
@@ -396,7 +386,6 @@ p {
     width: 100%;
 }
 #projects figure .icon {
-	// background: $marigold;
 	position: absolute;
 	top: 5px;
 	right: 5px;
@@ -485,17 +474,7 @@ figure.projFig:hover p {
 #skills {
     .fader-big {
         width: 100%;
-        // display: block;
         margin: 0 auto;
-        // @media screen and (max-width: 767px) {
-        //     transform: rotate(90deg);
-        //     // transform-origin: 50% center;
-        //     width: 15%;
-        // }
-
-        // @media screen and (max-width: 767px) and (orientation: landscape) {
-        //     width: 15%;
-        // }
     }
 
     .col-4 {
@@ -532,7 +511,6 @@ figure.projFig:hover p {
     }
 
     .mixer {
-
         margin: none;
         margin-top: 10px;
         @media screen and (min-width: 768px) {

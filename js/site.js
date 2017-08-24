@@ -11,11 +11,7 @@ function applyMailTo()
 }
 
 $(document).on('click', '.navBarCollapse', function(e) {
-	console.log("fucker clicked");
 	$('#togglemenu').collapse('hide');
-	// if( $(e.target).is('label') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-	//
-	// }
 });
 
 
@@ -116,12 +112,3 @@ $( window ).resize(function() {
 		not_small_land();
 	}
 });
-
-
-//
-// if(window.innerHeight > window.innerWidth){
-//     //portrait
-// }
-// if(window.innerWidth > window.innerHeight){
-//     //landscape
-// }
